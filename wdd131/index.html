@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD131 - Paulo Freitas</title>
+    <meta name="author" content="Paulo Freitas">
+    <meta name="description" content="WDD131: Dynamic Web Fundamentals - Paulo Freitas. Portfolio of Web Development">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+    <header>
+        <span id="header-title">WDD131: Dynamic Web Fundamentals - Paulo Freitas</span>
+        <nav>
+            <a href="https://www.linkedin.com/in/paulo-f-82b8a813a/">LinkedIn</a>
+            <a href="https://byupw.instructure.com/">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/2?lang=eng&id=p11#p11">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+    <main class="main-flex">
+        <section class="card">
+            <h1>About Me</h1>
+            <div class="card-content">
+                <div class="card-text">
+                    <p>Hello world! My name is Paulo and I'm from Brazil</p>
+                    <p>I'm currently working as an e-commerce administrator and graphic designer. I'm
+                        studying software Development at BYU-Pathway. My goal is to become a software engineer and create apps that make a difference. I love spending
+                        time outdoors, going to the movies, traveling, and exploring new technologies.
+                    </p>
+                </div>
+                <div class="profile-image">
+                    <img src="images/profile-image.jpg" alt="Profile Image">
+                </div>
+            </div>
+            <h1 class="location-text">Londrina, Brazil</h1>
+            <div class="country-info-content">
+                <div class="flag-image">
+                    <img src="images/brazilian-flag.jpg" alt="Brazilian Flag Image">
+                    <p class="flag-caption">Flag of Brazil</p>
+                </div>
+                    <p class="country-info-text">Brazil is the largest country in South America and the fifth largest in the world.
+                         Famous for its diverse landscapes, from the Amazon rainforest to stunning beaches, Brazil is also rich in culture, music, and traditions.
+                          With a growing economy and a vibrant population, Brazil is a land of opportunities, innovation, and natural beauty.</p>
+                </div>
+            </div>
+        </section>
+        <section class="card">
+            <h1>Web Dev Resources</h1>
+            <div class="card-content">
+                <div class="right-card-content">
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/">MDN Web Docs</a></li>
+                        <li><a href="https://css-tricks.com/">CSS-Tricks</a></li>
+                        <li><a href="https://stackoverflow.com/">Stack Overflow</a></li>
+                        <li><a href="https://w3schools.com/">W3Schools</a></li>
+                        <li><a href="https://web.dev/">web.dev</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Paulo Freitas, Brazil</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+</body>
+</html>
