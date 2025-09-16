@@ -8,10 +8,11 @@
     <meta name="description" content="WDD131: Dynamic Web Fundamentals - Paulo Freitas. Self Introduction Home Page for Web Development">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
     <header>
-        <span id="header-title">WDD131: Dynamic Web Fundamentals - Paulo Freitas</span>
+        <span id="course-title">WDD131: Dynamic Web Fundamentals - Paulo Freitas</span>
         <nav>
             <a href="https://www.linkedin.com/in/paulo-f-82b8a813a/">LinkedIn</a>
             <a href="https://byupw.instructure.com/">Canvas</a>
@@ -31,19 +32,18 @@
                     </p>
                 </div>
                 <div class="profile-image">
-                    <img src="images/profile-image.jpg" alt="Profile Image">
+                    <img src="images/profile-image.jpg" alt="Profile Image" fetchpriority=high >
                 </div>
             </div>
             <h1 class="location-text">Londrina, Brazil</h1>
             <div class="country-info-content">
                 <div class="flag-image">
-                    <img src="images/brazilian-flag.jpg" alt="Brazilian Flag Image">
+                    <img src="images/brazilian-flag.jpg" alt="Brazilian Flag Image" fetchpriority=high >
                     <p class="flag-caption">Flag of Brazil</p>
                 </div>
                     <p class="country-info-text">Brazil is the largest country in South America and the fifth largest in the world.
                          Famous for its diverse landscapes, from the Amazon rainforest to stunning beaches, Brazil is also rich in culture, music, and traditions.
                           With a growing economy and a vibrant population, Brazil is a land of opportunities, innovation, and natural beauty.</p>
-                </div>
             </div>
         </section>
         <section class="card">
@@ -65,6 +65,5 @@
         <p>&copy; <span id="currentyear"></span> Paulo Freitas, Brazil</p>
         <p>Last Modification: <span id="lastModified"></span></p>
     </footer>
-    <script src="scripts/getdates.js"></script>
 </body>
 </html>
