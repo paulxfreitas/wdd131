@@ -49,7 +49,7 @@ main {
     border-radius: 10px;
 }
 
-.card h1 {
+.card h1, .card h2 {
     margin-top: 0;
     margin-bottom: 1rem;
     color: #333;
@@ -149,7 +149,7 @@ footer {
     padding: 0.5rem;
 }
 
-/* Responsive for phones */
+/* responsive for phones */
 @media (max-width: 768px) {    
     .main-flex {
         flex-direction: column;
