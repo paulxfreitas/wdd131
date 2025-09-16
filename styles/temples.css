@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* header */
+header {
+    color: #fff;
+    background-color: #333;
+    display: flex;/* align title and nav */
+    justify-content: space-between;/* title left and nav rightt */
+    align-items: center;
+    padding: 1rem;
+}
+
+/* header title */
+#header-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.page-title {
+    text-align: center;
+    margin-top: 1rem;
+    color: #333;
+}
+
+/* navigation links */
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background 0.2s, color 0.2s;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background: #777;
+    color: #fff;
+    border-radius: 4px;
+}
+
+/* main content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 1rem 2.5rem 1rem;
+}
+
+/* grid layout for temple images */
+.figure-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.figure-grid figure {
+    margin: 0;
+}
+
+.figure-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 0.5rem;
+}
+
+/* hamburger menu button */
+#menu {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    margin-left: auto;
+    color: white;
+    position: relative;
+    z-index: 101;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "x";
+}
+
+.navigation a {
+    display: none;
+    padding: 0.5rem;
+    text-decoration: none;
+}
+
+.open a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #222;
+    margin: 0;
+    text-align: center;
+}
+
+.navigation.open {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #222;
+    z-index: 100;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
