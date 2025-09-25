@@ -16,7 +16,6 @@
 }
 
 body {
-  font-family: 'DM Sans', 'Trebuchet MS', sans-serif;
   line-height: 1.5;
   background: var(--light);
   color: var(--secondary);
@@ -50,6 +49,15 @@ header {
   border: 2px solid var(--primary);
   margin: 1rem;
   background: white;
+}
+
+body, ul, li {
+  font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
 }
 
 .data h2, .weather h2 {
