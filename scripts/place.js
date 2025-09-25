@@ -1,9 +1,7 @@
 document.getElementById("currentyear").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = document.lastModified;
 
-// Wind Chill Calculation
 function calculateWindChill(tempC, windKmh) {
-  // Formula in Celsius
   return (
     13.12 +
     0.6215 * tempC -
@@ -12,12 +10,10 @@ function calculateWindChill(tempC, windKmh) {
   ).toFixed(1);
 }
 
-// Static values (from HTML)
 const temp = parseFloat(document.getElementById("temp").textContent);
 const wind = parseFloat(document.getElementById("wind").textContent);
 
 let windchillText = "N/A";
-// Check conditions for valid calculation
 if (temp <= 10 && wind > 4.8) {
   windchillText = calculateWindChill(temp, wind) + " °C";
 }
