@@ -1,0 +1,151 @@
+/* Global variables */
+:root {
+  --primary: #2c5f2d;
+  --secondary: #000;
+  --accent: #de3831;
+  --accent-2: #ffb612;
+  --accent-3: #4a90e2;
+  --light: #ffffff;
+}
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  background: var(--light);
+  color: var(--secondary);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* header */
+header {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+}
+
+.place-title {
+  font-size: 2.5rem;
+  border-bottom: 10px solid var(--accent-2);
+  padding: 1rem;
+}
+
+h1, h2 {
+    font-family: 'Ojuju', cursive, 'Trebuchet MS', Arial, sans-serif;
+    font-weight: bold;
+}
+
+body, ul, li, footer {
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  font-size: 1.1rem;
+}
+
+/* hero image */
+.hero img {
+  width: 100%;
+  display: block;
+  border-bottom: 3px solid var(--primary);
+}
+
+/* sections */
+.data, .weather {
+  border: 2px solid var(--primary);
+  margin: 1rem;
+  background: white;
+}
+
+.data h2, .weather h2 {
+  color: var(--light);
+  text-align: center;
+  background-color: var(--primary);
+  padding-bottom: 0.5rem;
+}
+
+ul {
+  list-style: none;
+  padding: 1rem;
+}
+
+li {
+  margin: 0.3rem 0;
+  text-align: center;
+}
+
+/* weather icon in mobile */
+.weather-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  display: block;
+  padding-top: 1rem;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  background: var(--primary);
+  color: white;
+  padding: 1rem;
+  margin-top: auto;
+  border-top: 10px solid var(--accent-2);
+}
+
+/* wide view */
+@media (min-width: 950px) {
+  main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 75vh;
+  }
+
+  body {
+    background: url("../images/hero-large.webp") no-repeat center/cover;
+  }
+
+
+  .hero {
+    display: none;
+  }
+
+  /* Floating cards */
+  .data, .weather {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.85); /* translucent card effect */
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  }
+
+  .data {
+    left: 2%;
+    top: 3%
+  }
+
+  .weather {
+    right: 2%;
+    bottom: 3%;
+  }
+
+  ul {
+    padding: 1rem
+  }
+
+  /* hide mobile SVG, use icon ⛅ */
+  .weather .weather-icon {
+    display: none;
+  }
+
+  .weather h2::after {
+    content: " ⛅";
+    font-size: 1.2rem;
+  }
+}
