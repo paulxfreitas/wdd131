@@ -16,6 +16,7 @@
 }
 
 body {
+  font-family: 'DM Sans', 'Trebuchet MS', sans-serif;
   line-height: 1.5;
   background: var(--light);
   color: var(--secondary);
@@ -35,15 +36,6 @@ header {
   font-size: 2.5rem;
   border-bottom: 10px solid var(--accent-2);
   padding: 1rem;
-}
-
-h1, h2 {
-    font-family: 'DM Sans', cursive, 'Trebuchet MS', Arial, sans-serif;
-}
-
-body, ul, li, footer {
-  font-family: 'Trebuchet MS', Arial, sans-serif;
-  font-size: 1.1rem;
 }
 
 /* hero image */
