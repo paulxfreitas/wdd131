@@ -38,8 +38,7 @@ header {
 }
 
 h1, h2 {
-    font-family: 'Ojuju', cursive, 'Trebuchet MS', Arial, sans-serif;
-    font-weight: bold;
+    font-family: 'DM Sans', cursive, 'Trebuchet MS', Arial, sans-serif;
 }
 
 body, ul, li, footer {
@@ -65,7 +64,7 @@ body, ul, li, footer {
   color: var(--light);
   text-align: center;
   background-color: var(--primary);
-  padding-bottom: 0.5rem;
+  padding: 0.5rem;
 }
 
 ul {
