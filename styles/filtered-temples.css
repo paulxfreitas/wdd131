@@ -1,0 +1,178 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* header */
+header {
+    color: #fff;
+    background-color: #333;
+    display: flex;/* align title and nav */
+    justify-content: space-between;/* title left and nav rightt */
+    align-items: center;
+    padding: 1rem;
+}
+
+/* header title */
+#header-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.page-title {
+    text-align: center;
+    margin-top: 1rem;
+    color: #333;
+}
+
+.page-subtitle {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #666;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+h1, h2 {
+    margin-top: 0;
+}
+
+/* navigation links */
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background 0.2s, color 0.2s;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background: #777;
+    color: #fff;
+    border-radius: 4px;
+}
+
+/* main content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 1rem 4rem 1rem;
+    min-height: 80vh;
+}
+
+/* grid layout for temple images */
+.figure-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.figure-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 0.5rem;
+}
+
+/* hamburger menu button */
+#menu {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    margin-left: auto;
+    color: white;
+    position: relative;
+    z-index: 101;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "x";
+}
+
+.navigation a {
+    display: none;
+    padding: 0.5rem;
+    text-decoration: none;
+}
+
+.open a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #222;
+    margin: 0;
+    text-align: center;
+}
+
+.navigation.open {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #222;
+    z-index: 100;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+
+
+/* Temple card styling */
+.figure-grid section {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.figure-grid section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.figure-grid section h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 1rem 1rem 0.3rem;
+    color: #111;
+}
+
+.figure-grid section p {
+    margin: 0.3rem 1rem 0.3rem 1rem;
+    font-size: 0.95rem;
+    color: #444;
+}
+
+.figure-grid section .label {
+    font-weight: 500;
+    color: #666;
+}
+
+.figure-grid section img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+    margin-top: 1rem
+}

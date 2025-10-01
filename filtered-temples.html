@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="Collection of photos of temples around the world">
+    <meta name="author" content="Paulo Freitas">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="menu" aria-label="Open menu"></button>
+        <nav class="navigation">
+            <a href="#" id="home">Home</a>
+            <a href="#" id="old">Old</a>
+            <a href="#" id="new">New</a>
+            <a href="#" id="large">Large</a>
+            <a href="#" id="small">Small</a>
+        </nav>
+    </header>
+    <main>
+        <h1 class="page-title">Temple Photos</h1>
+        <h2 class="page-subtitle">Collection of photos of temples around the world</h2>
+        <div class="figure-grid">
+        </div>    
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Paulo Freitas, Brazil</p>
+        <p>Last Modification: <span id="lastModified"></span></p>  
+    </footer>
+</body>
+</html>

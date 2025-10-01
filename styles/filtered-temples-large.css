@@ -1,0 +1,27 @@
+/* medium screens */
+@media (min-width: 768px) and (max-width: 1200px) {
+    .figure-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* large screens */
+@media (min-width: 1201px) {
+    .figure-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* hide hamburger button */
+    #menu {
+      display: none;
+    }
+
+    .navigation {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .navigation a {
+      display: block;
+    }
+}
