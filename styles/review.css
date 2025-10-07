@@ -1,0 +1,32 @@
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #1a4f8a;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px 10px;
+}
+
+header h1, footer p {
+    margin: 5px 0;
+}
+
+main {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}

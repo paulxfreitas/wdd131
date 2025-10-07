@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submitted</title>
+    <meta name="author" content="Paulo Freitas">
+    <meta name="description" content="Page confirming review submission">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/review.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Thank You!</h1>
+    </header>
+
+    <main>
+        <p>Your review has been submitted successfully.</p>
+        <p id="counter">You have submitted 0 reviews so far.</p>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Paulo Freitas, Brazil</p>
+        <p>Last Modification: <span id="lastModified"></span></p>  
+    </footer>
+
+    <script>
+        let count = localStorage.getItem('reviewCount') || 0;
+        count = parseInt(count) + 1;
+        localStorage.setItem('reviewCount', count);
+
+        document.getElementById('counter').textContent = `You have submitted ${count} reviews so far.`;
+    </script>
+</body>
+</html>
