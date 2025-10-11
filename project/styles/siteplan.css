@@ -1,0 +1,141 @@
+:root {
+  --primary-color: #1E1E2F;
+  --secondary-color: #AB82FF;
+  --accent-color: #00F5FF;
+  --text-light: #FFFFFF;
+}
+
+body {
+  font-family: 'Rajdhani', sans-serif;
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+  background-image: radial-gradient(circle at 20% 20%, #292946 0%, #1e1e2f 100%);
+}
+
+h1, h2, h3 {
+  font-family: 'Orbitron', sans-serif;
+  color: var(--secondary-color);
+  letter-spacing: 1px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+header img {
+  width: 100px;
+  height: auto;
+  filter: drop-shadow(0 0 8px var(--accent-color));
+}
+
+header p {
+  max-width: 600px;
+  margin: 10px auto;
+  color: var(--accent-color);
+}
+
+section {
+  margin-bottom: 50px;
+  border-left: 3px solid var(--secondary-color);
+  padding-left: 15px;
+}
+
+ul.scenarios {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+.color-sample {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 5px;
+  vertical-align: middle;
+  box-shadow: 0 0 8px var(--accent-color);
+}
+
+.color-item {
+  margin-bottom: 10px;
+}
+
+.color-sample.primary {
+  background-color: var(--primary-color);
+}
+
+.color-sample.secondary {
+  background-color: var(--secondary-color);
+}
+
+.color-sample.accent {
+  background-color: var(--accent-color);
+}
+
+.wireframe {
+  background-color: #2a2a3f;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid var(--accent-color);
+  box-shadow: 0 0 15px #000;
+}
+
+.wireframe p {
+  color: var(--accent-color);
+  font-family: monospace;
+  margin: 5px 0;
+}
+
+.wireframes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.wireframes img {
+  border: 2px solid var(--secondary-color);
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(162, 155, 254, 0.3);
+}
+
+.wireframes figure:first-child img {
+  max-width: 680px;
+}
+
+.wireframes figure:last-child img {
+  max-width: 300px;
+}
+
+figcaption {
+  text-align: center;
+  margin-top: 0.5rem;
+  color: var(--secondary-color);
+  font-style: italic;
+}
+
+h2:hover, h3:hover {
+  text-shadow: 0 0 10px var(--accent-color);
+}
+
+section h2 {
+  border-bottom: 2px solid var(--secondary-color);
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    color: var(--accent-color);
+    font-size: 1rem;
+}
+
+@media (max-width: 800px) {
+  .wireframes figure:first-child img {
+    max-width: 400px;
+  }
+}
+
