@@ -1,6 +1,6 @@
 :root {
   --primary-color: #1E1E2F;
-  --secondary-color: #AB82FF;
+  --secondary-color: #E392FE;
   --accent-color: #00F5FF;
   --text-light: #FFFFFF;
 }
@@ -113,7 +113,7 @@ ul.scenarios {
 figcaption {
   text-align: center;
   margin-top: 0.5rem;
-  color: var(--secondary-color);
+  color: var(--text-light);
   font-style: italic;
 }
 
