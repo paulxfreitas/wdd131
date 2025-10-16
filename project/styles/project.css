@@ -189,6 +189,73 @@ footer {
   border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
+/* SURVEY FORM SECTION */
+.survey-form {
+  background-color: var(--primary-color);
+  padding: 60px 50px;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.survey-form h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: var(--secondary-color);
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.survey-form form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.survey-form label {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  text-align: left;
+}
+
+.survey-form input[type="text"],
+.survey-form select {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #555;
+  background-color: #292946;
+  color: var(--text-light);
+  outline: none;
+}
+
+.survey-form input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.survey-form button {
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  color: var(--text-light);
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.survey-form button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Message output */
+#surveyMessage {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: var(--text-light);
+  min-height: 1.2em;
+}
+
 /* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
   /* Ensure hamburger is visible */
