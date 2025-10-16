@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starlight Echo</title>
+    <meta name="description" content="Quick facts and visuals about planets, stars, and galaxies — perfect for curious minds exploring the universe.">
+    <meta name="author" content="Paulo Freitas">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/project-logo.svg" alt="Logo">
+        </div>
+
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav>
+            <a href="project.html" class="active">🌍 Home</a>
+            <a href="cosmic-facts.html">✨ Cosmic Facts</a>
+            <a href="solar-system.html">🪐 Solar System Gallery</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="images/sky-at-night.jpg" alt="Sky at night" class="hero-image" loading="lazy" fetchpriority="high">
+            <div class="hero-content">
+            <h1 class="hero-title">Welcome to Starlight Echo!</h1>
+            <p class="hero-text">Mind-blowing cosmic facts and a Solar System gallery await you!</p>
+        </div>
+        </section>
+
+        <section class="content-section">
+            <div class="content-box">
+                Welcome to Starlight Echo! 🌌 Here you’ll discover astonishing facts about the universe — from stars that outshine our sun to galaxies billions of light-years away.  
+        Learn how black holes warp space and time, why some planets spin backwards, and what makes Saturn’s rings so mesmerizing.  
+        Don’t miss our Solar System gallery 🪐, where you can explore every planet up close, see their unique features, and uncover secrets about moons, asteroids, and comets.  
+        Whether you’re a curious mind, a student, or just love space, this is your gateway to the cosmos!
+            </div>
+        </section>
+
+        <section class="image-section">
+            <div class="image-box left">
+            <a href="cosmic-facts.html" class="image-link">
+            <img class="image-placeholder" src="images/cosmic-facts-1.jpg" alt="The Tarantula Nebula" loading="lazy">
+            <span class="image-text-link">Cosmic Facts</span>
+            </a>
+        </div>
+        <div class="image-box right">
+          <a href="solar-system.html" class="image-link">
+            <img class="image-placeholder" src="images/solar-system-1.jpg" alt="Solar System">
+            <span class="image-text-link">Solar System Gallery</span>
+          </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Paulo Freitas, Brazil</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+</html>

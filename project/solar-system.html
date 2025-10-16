@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solar System Gallery</title>
+  <meta name="description" content="A beautiful gallery of the Sun and planets in our solar system, with fascinating facts about each.">
+  <meta name="author" content="Paulo Freitas">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/solar-gallery.css">
+  <script src="scripts/project.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="images/project-logo.svg" alt="Logo">
+    </div>
+
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav>
+      <a href="project.html">🌍 Home</a>
+      <a href="cosmic-facts.html">✨ Cosmic Facts</a>
+      <a href="solar-gallery.html" class="active">🪐 Solar System Gallery</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>🪐 Solar System Gallery</h1>
+      <p>Explore our Sun and planets — from fiery giants to icy worlds, arranged in their cosmic order.</p>
+    </section>
+
+    <section class="gallery">
+      <!-- SUN -->
+      <div class="planet-card">
+        <img src="images/sun.webp" alt="Sun" loading="lazy">
+        <h2>☀️ Sun</h2>
+        <p>The heart of our solar system — a glowing ball of hydrogen and helium that provides light and warmth for life on Earth.</p>
+      </div>
+
+      <!-- MERCURY -->
+      <div class="planet-card">
+        <img src="images/mercury.webp" alt="Mercury" loading="lazy">
+        <h2>☿ Mercury</h2>
+        <p>The smallest planet and closest to the Sun. Days are scorching hot, but nights are freezing cold.</p>
+      </div>
+
+      <!-- VENUS -->
+      <div class="planet-card">
+        <img src="images/venus.webp" alt="Venus" loading="lazy">
+        <h2>♀ Venus</h2>
+        <p>Covered in thick clouds of acid, Venus is hotter than Mercury due to its extreme greenhouse effect.</p>
+      </div>
+
+      <div class="planet-card">
+        <img src="images/moon.webp" alt="Moon" loading="lazy">
+        <h2>🌕 Moon</h2>
+        <p>Earth's only natural satellite, the Moon influences our tides and has a surface covered in craters.</p>
+      </div>
+
+      <!-- EARTH -->
+      <div class="planet-card">
+        <img src="images/earth.webp" alt="Earth" loading="lazy">
+        <h2>🌍 Earth</h2>
+        <p>Our blue home — the only known planet with life, protected by a rich atmosphere and magnetic field.</p>
+      </div>
+
+      <!-- MARS -->
+      <div class="planet-card">
+        <img src="images/mars.webp" alt="Mars" loading="lazy">
+        <h2>♂ Mars</h2>
+        <p>The red planet, with vast canyons and the tallest volcano in the solar system — Olympus Mons.</p>
+      </div>
+
+      <!-- JUPITER -->
+      <div class="planet-card">
+        <img src="images/jupiter.webp" alt="Jupiter" loading="lazy">
+        <h2>♃ Jupiter</h2>
+        <p>The gas giant king, massive enough to fit all other planets inside. Its Great Red Spot is a storm older than Earth’s recorded history.</p>
+      </div>
+
+      <!-- SATURN -->
+      <div class="planet-card">
+        <img src="images/saturn.webp" alt="Saturn" loading="lazy">
+        <h2>♄ Saturn</h2>
+        <p>Famous for its dazzling rings, Saturn is a gas giant that could float in water due to its low density.</p>
+      </div>
+
+      <!-- URANUS -->
+      <div class="planet-card">
+        <img src="images/uranus.webp" alt="Uranus" loading="lazy">
+        <h2>♅ Uranus</h2>
+        <p>Tilts on its side, spinning like a rolling ball. Its pale blue hue comes from icy methane clouds.</p>
+      </div>
+
+      <!-- NEPTUNE -->
+      <div class="planet-card">
+        <img src="images/neptune.webp" alt="Neptune" loading="lazy">
+        <h2>♆ Neptune</h2>
+        <p>The farthest planet, wrapped in deep blue storms with winds faster than any other planet in the solar system.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentYear"></span> Paulo Freitas, Brazil</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </footer>
+
+</body>
+</html>
